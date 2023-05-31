@@ -15,7 +15,7 @@ local gpmdp = require("widgets.gpmdp")
 local theme = {}
 theme.dir = os.getenv("HOME") .. "/.config/awesome/themes/msjche"
 theme.wallpaper = theme.dir .. "/wall.png"
-theme.font = "Droid Sans 14"
+theme.font = "Fira Code 14"
 theme.taglist_font = "Xirod 17"
 theme.fg_normal = "#757575"
 theme.fg_focus = "#7A5ADA"
@@ -383,7 +383,7 @@ function theme.at_screen_connect(s)
 	s.mywibox:setup({
 		layout = wibox.layout.align.horizontal,
 		{
-		-- Left widgets
+			-- Left widgets
 			layout = wibox.layout.fixed.horizontal,
 			small_spr,
 			s.mylayoutbox,
@@ -396,7 +396,7 @@ function theme.at_screen_connect(s)
 		},
 		s.mytasklist, -- Middle widget
 		{
-		            -- Right widgets
+			-- Right widgets
 			layout = wibox.layout.fixed.horizontal,
 			bar_spr,
 			wibox.widget.systray(),
@@ -431,7 +431,7 @@ function theme.at_screen_connect(s)
 	s.myverticalwibox:setup({
 		layout = wibox.layout.align.vertical,
 		{
-		-- Top widgets
+			-- Top widgets
 			layout = wibox.layout.fixed.vertical,
 			mylauncher,
 		},
