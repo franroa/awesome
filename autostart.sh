@@ -19,6 +19,7 @@ pkill conky
 
 run "google-chrome --start-fullscreen"
 run "firefox"
+run "obsidian"
 run "gnome-todo"
 run "opera --start-fullscreen"
 
