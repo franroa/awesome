@@ -67,10 +67,10 @@ run_once({ "unclutter -root" }) -- entries must be comma-separated
 local chosen_theme = "msjche"
 local modkey = "Mod4"
 local altkey = "Mod1"
-local terminal = "wezterm"
+local terminal = "kitty"
 local editor = os.getenv("EDITOR") or "nvim"
 local gui_editor = "gvim"
-local browser = "brave-browser"
+local browser = "brave"
 local guieditor = "atom"
 
 awful.util.terminal = terminal
@@ -264,7 +264,7 @@ globalkeys = awful.util.table.join(
     awful.util.spawn("qutebrowser --backend webengine")
   end),
   awful.key({ modkey, "Shift" }, "b", function()
-    awful.util.spawn("brave-browser")
+    awful.util.spawn("brave")
   end),
   awful.key({ modkey, "Shift" }, "k", function()
     awful.util.spawn("xscreensaver-command -lock")
@@ -676,12 +676,12 @@ awful.rules.rules = {
   --      properties = { titlebars_enabled = true } },
 
   { rule = { class = "Brave" },                   properties = { tag = awful.screen.focused().tags[1], switchtotag = true } },
-  { rule = { class = "wezterm" },                 properties = { tag = awful.screen.focused().tags[2], switchtotag = true } },
+  { rule = { class = "kitty" },                   properties = { tag = awful.screen.focused().tags[2], switchtotag = true } },
   { rule = { class = "Google" },                  properties = { tag = awful.screen.focused().tags[3], switchtotag = true } },
   { rule = { class = "firefox" },                 properties = { tag = awful.screen.focused().tags[4], switchtotag = true } },
   { rule = { class = "Opera" },                   properties = { tag = awful.screen.focused().tags[5], switchtotag = true } },
-  { rule = { class = "Gnome-todo" },              properties = { tag = awful.screen.focused().tags[6], switchtotag = true } },
-  { rule = { class = "Obsidian" },                properties = { tag = awful.screen.focused().tags[7], switchtotag = true } },
+  { rule = { class = "obsidian" },                properties = { tag = awful.screen.focused().tags[6], switchtotag = true } },
+  { rule = { class = "Nautilus" },                properties = { tag = awful.screen.focused().tags[7], switchtotag = true } },
 
   -- Set Firefox to always map on the first tag on screen 1.
   --    { rule = { class = "Firefox" },

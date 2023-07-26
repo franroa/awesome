@@ -335,7 +335,7 @@ function theme.at_screen_connect(s)
 
   -- Tag names and layouts
   --awful.tag(awful.util.tagnames, s, awful.layout.layouts)
-  local names = { "1-WEB", "2-PROG", "3-GPT", "4-SYNAOS", "5-TEAMS", "6-TODO", "7-OBS", "8-GAM", "9-MIS" }
+  local names = { "1-WEB", "2-PROG", "3-GPT", "4-SYNAOS", "5-TEAMS", "6-OBS", "7-FILES", "8-GAM", "9-MIS" }
   local l = awful.layout.suit
   local layouts = {
     l.max,

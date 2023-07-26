@@ -1,28 +1,28 @@
-#!/usr/bin/env bash
+!/usr/bin/env bash
 
-# function run {
-# 	if ! pgrep $1; then
-# 		$@ &
-# 	fi
-# }
-#
-# #run "megasync"
-# run "xscreensaver -no-splash"
-# #run "/usr/bin/dropbox"
-# #run "insync start"
-# run "compton"
-# #run "/usr/bin/redshift"
-# # run "urxvtd -q -f -o"
-# run "mpd"
-# run "nm-applet"
-# pkill conky
-#
-# run "google-chrome --start-fullscreen"
-# run "firefox"
-# run "obsidian"
-# run "gnome-todo"
-# run "opera --start-fullscreen"
-#
+ function run {
+ 	if ! pgrep $1; then
+ 		$@ &
+ 	fi
+ }
+
+ #run "megasync"
+ run "xscreensaver -no-splash"
+ #run "/usr/bin/dropbox"
+ #run "insync start"
+ run "compton"
+ #run "/usr/bin/redshift"
+ # run "urxvtd -q -f -o"
+ run "mpd"
+ run "nm-applet"
+ pkill conky
+
+ run "google-chrome-stable --start-fullscreen"
+ run "firefox"
+ run "obsidian"
+ run "nautilus"
+ run "opera --start-fullscreen"
+
 # sleep 3
 # run "$HOME/Scripts/Theming/1440.sh"
 # #run "$HOME/Scripts/start_HUD.sh"
