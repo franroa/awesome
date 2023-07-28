@@ -22,6 +22,7 @@
  run "obsidian"
  run "nautilus"
  run "opera --start-fullscreen"
+ run "reader"
 
 # sleep 3
 # run "$HOME/Scripts/Theming/1440.sh"

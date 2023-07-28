@@ -67,7 +67,7 @@ run_once({ "unclutter -root" }) -- entries must be comma-separated
 local chosen_theme = "msjche"
 local modkey = "Mod4"
 local altkey = "Mod1"
-local terminal = "wezterm"
+local terminal = "kitty"
 local editor = os.getenv("EDITOR") or "nvim"
 local gui_editor = "gvim"
 local browser = "brave"
@@ -676,7 +676,7 @@ awful.rules.rules = {
   --      properties = { titlebars_enabled = true } },
 
   { rule = { class = "Brave" },                   properties = { tag = awful.screen.focused().tags[1], switchtotag = true } },
-  { rule = { class = "wezterm" },                 properties = { tag = awful.screen.focused().tags[2], switchtotag = true } },
+  { rule = { class = "kitty" },                   properties = { tag = awful.screen.focused().tags[2], switchtotag = true } },
   { rule = { class = "Google" },                  properties = { tag = awful.screen.focused().tags[3], switchtotag = true } },
   { rule = { class = "firefox" },                 properties = { tag = awful.screen.focused().tags[4], switchtotag = true } },
   { rule = { class = "Opera" },                   properties = { tag = awful.screen.focused().tags[5], switchtotag = true } },
