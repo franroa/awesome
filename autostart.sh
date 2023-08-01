@@ -7,22 +7,22 @@
  }
 
  #run "megasync"
- run "xscreensaver -no-splash"
+ # run "xscreensaver -no-splash"
  #run "/usr/bin/dropbox"
  #run "insync start"
- run "compton"
+ #run "compton"
  #run "/usr/bin/redshift"
  # run "urxvtd -q -f -o"
- run "mpd"
- run "nm-applet"
- pkill conky
+ # run "mpd"
+ # run "nm-applet"
+ # pkill conky
 
  run "google-chrome-stable --start-fullscreen"
  run "firefox"
  run "obsidian"
- run "nautilus"
+ # run "nautilus"
  run "opera --start-fullscreen"
- run "reader"
+ # run "reader"
 
 # sleep 3
 # run "$HOME/Scripts/Theming/1440.sh"
